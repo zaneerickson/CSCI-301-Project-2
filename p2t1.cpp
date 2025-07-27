@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+//input/output overloads:
 
 std::istream& operator>>(std::istream& input, item& iobj1) { //overloaded >> operator
     input >> iobj1.name >> iobj1.quantity >> iobj1.price;
@@ -13,6 +14,7 @@ std::ostream& operator<<(std::ostream& output, const item& iobj1) { //overloaded
     return output; //outputs object
 }
 
+//test run
 
 int main() {
     item i1;
