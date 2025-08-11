@@ -5,12 +5,12 @@ using namespace std;
 //input/output overloads:
 
 std::istream& operator>>(std::istream& input, item& iobj1) { //overloaded >> operator
-    input >> iobj1.name >> iobj1.quantity >> iobj1.price;
+    input >> iobj1.name >> iobj1.price >> iobj1.quantity;
     return input; //inputs object
 }
 
 std::ostream& operator<<(std::ostream& output, const item& iobj1) { //overloaded << operator
-    output << iobj1.getstring() << " " << iobj1.getint() << " " << iobj1.getfloat();
+    output << iobj1.getstring() << " " << iobj1.getfloat() << " " << iobj1.getint();
     return output; //outputs object
 }
 
